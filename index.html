@@ -14,15 +14,14 @@
  <body>
 
   <!-- jumbotron -->
-  <div class="row jumbotron bgc-0 clr-0">
+  <div class="col-sm-12 row jumbotron bgc-0 clr-0">
     <h1 class="text-center display-1">Acidd!</h1>
     <p class="text-end">bgc-0 clr-0</p>
   </div>
   <!-- End jumbotron -->
 
   <!-- Row 1 -->
-  <div id="row1" class="container-fluid text-center">
-    <div class="row pt-5 acidd bgc-1">
+  <div id="row1" class="col-sm-12 text-center row pt-5 acidd bgc-1">
       <div class="col-sm-4 acidd clr-1">
         <h2>clr-1</h2>
       </div>
@@ -32,29 +31,57 @@
       <div class="col-sm-4 acidd clr-3">
         <h2>clr-3</h2>
       </div>
-    </div>
-    <div class="row acidd bgc-1">
       <p class="text-end">bgc-1</p>
-    </div>
   </div>
   <!-- End Row 1 -->
 
   <!-- Row 2 -->
-  <div id="row2" class="container-fluid text-start">
-    <div class="row pt-5 acidd bgc-2">
-      <p class="acidd clr-4">
-        Don't like this orange and blue color scheme? Don't worry, it won't last long.
-      </p>
-      <p class="acidd clr-5">
-        Acidd scans all elements with the class 'acidd' and stores their initial background-color and/or color values in an array. It then drifts the R,G, & B values for each element by a random value between 0-2. This results in a slow drift but eventually you will notice, well, this page is no longer orange and blue, is it?
-      </p>
-      <p class="text-end acidd clr-5">bgc-2 clr4 clr-5</p>
-    </div>
+  <div class="col-sm-12 row row2 p-5 acidd bgc-2">
+    <h3>About:</h3>
+    <p class="acidd clr-4">
+      Don't like this orange and blue color scheme? Don't worry, it won't last long.
+    </p>
+    <p class="acidd clr-5">
+      Acidd scans all elements with the class 'acidd' and stores their initial background-color and/or color values in an array. It then drifts the R,G, & B values for each element by a random value between 0-2. This results in a slow drift but eventually you will notice, well, this page is no longer orange and blue, is it?
+    </p>
+    <p class="acidd clr-6">
+      <h3>How do you use it?</h3>
+      <span>
+        Well like any other script, install it using NPM: <code>npm install acidd</code><br>
+        Then add it to your html: <code>&lt;script src="node_modules/acidd/acidd.js" charset="utf-8"&gt;&lt;/script&gt;</code><br>
+        Finally add the classes to the elements you want to drift thusly: <code>class='acidd bgc-0 clr-0'</code><br>
+      </span>
+    </p>
+
+    <p class="acidd clr-7">
+      <h3>FAQs:</h3>
+      <span>
+        <ul>
+          <li>You can assign just a bgc-* class to an element if you want just the background-color to drift.</li>
+          <li>Or, you can assign just a clr-* class to an element if you want just the color to drift.</li>
+          <li>You can assign multiple bgc-* or clr-* values to an element if you want, it won't break anything, but only one value will be applied.</li>
+          <li>You can use any number you want following bgc-* or clr-* (eg: 1, 8, 13, 138...) It doesn't matter as long as it's a number.</li>
+          <li>The value after bgc- or clr- <i>does</i> have to be a number though. You can't use bgc-banana or anything. Mostly because then I'd try to figure out how to make it go from green to yellow to brown spots to black before completely removing the element from the DOM and who has that sort of time?</li>
+          <li>No you don't have to use NPM, I still feel weird using it for front-end too. You can always download the acidd.js file from github and add it to your page like usual. I just ask that you keep the attribution in the file.</li>
+        </ul>
+      </span>
+    </p>
+
   </div>
+  <div class="col-sm-12 row row2 acidd bgc-2">
+    <p class="text-end acidd clr-5">bgc-2 clr4 clr-5 clr-6 clr-7</p>
+  </div>
+  <!-- End Row 2 -->
 
   <!-- Footer -->
-  <footer class="row container-fluid text-center acidd bgc-3 clr-0">
-    <p><a href="https://acidd.kylemunz.com/">acidd.KyleMunz.com</a></p>
+  <footer class="col-sm-12 row text-center pt-3 acidd bgc-3 clr-0">
+    <p>
+      <a href="https://www.npmjs.com/package/acidd"><img src="https://nodei.co/npm/acidd.png" alt="NPM"></a>
+    </p>
+    <p>
+      <a href="https://github.com/kyle138/acidd">https://github.com/kyle138/acidd</a>
+    </p>
+    <p class="text-end">bgc-3 clr-0</p>
   </footer>
   <!-- End footer -->
 
