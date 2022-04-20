@@ -2,7 +2,7 @@
   "deploy": {
     "type": "S3",
     "target": {
-      "master": "acidd.kylemunz.com",
+      "main": "acidd.kylemunz.com",
       "dev": "dev.acidd.kylemunz.com"
     }
   }
