@@ -17,3 +17,10 @@ footer {
   background-color: #ADD8E6;
   color: #FFA500;
 }
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+}
